@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cieli blu, Alessio - Memorial Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sky-typography.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <!-- Cloud Layer for Additional Depth -->
+    <div class="cloud-layer"></div>
+    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -112,37 +116,129 @@
                 <p>Alessio condivideva la sua passione per la sostenibilità e i veicoli elettrici attraverso il canale YouTube GreenStart, dove testava auto e moto elettriche e partecipava a eventi del settore.</p>
             </div>
 
-            <div class="videos-grid">
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/ZDgWWG3oIv4" title="25MILA KM su una KONA ELECTRIC" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h4>25MILA KM su una KONA ELECTRIC per parlare di SOSTENIBILITÀ</h4>
-                    <p>Un viaggio straordinario per sensibilizzare sulla sostenibilità terrestre e marina</p>
-                </div>
+            <div class="passion-carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide active">
+                            <div class="video-card glass-cloud">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/ZDgWWG3oIv4" title="25MILA KM su una KONA ELECTRIC" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-badge">
+                                        <i class="fas fa-leaf"></i>
+                                        <span>Sostenibilità</span>
+                                    </div>
+                                    <h4>25MILA KM su una KONA ELECTRIC per parlare di SOSTENIBILITÀ</h4>
+                                    <p>Un viaggio straordinario per sensibilizzare sulla sostenibilità terrestre e marina</p>
+                                    <div class="card-stats">
+                                        <div class="stat-item">
+                                            <i class="fas fa-route"></i>
+                                            <span>25.000 km</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <i class="fas fa-battery-full"></i>
+                                            <span>100% Elettrico</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/-0TN2FoDMmg?start=372" title="Tacita, test drive delle moto elettriche" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h4>Tacita - Test drive delle moto elettriche</h4>
-                    <p>Alla scoperta delle moto elettriche italiane e delle novità 2024</p>
-                </div>
+                        <div class="carousel-slide">
+                            <div class="video-card glass-cloud">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/-0TN2FoDMmg?start=372" title="Tacita, test drive delle moto elettriche" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-badge">
+                                        <i class="fas fa-motorcycle"></i>
+                                        <span>Test Drive</span>
+                                    </div>
+                                    <h4>Tacita - Test drive delle moto elettriche</h4>
+                                    <p>Alla scoperta delle moto elettriche italiane e delle novità 2024</p>
+                                    <div class="card-stats">
+                                        <div class="stat-item">
+                                            <i class="fas fa-flag-checkered"></i>
+                                            <span>Made in Italy</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span>Novità 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/p_wptaqg8Cw" title="Salone dell'Auto di Ginevra 2024" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <h4>Salone dell'Auto di Ginevra 2024</h4>
-                    <p>Alla scoperta della Renault 5 e delle novità di BYD</p>
-                </div>
+                        <div class="carousel-slide">
+                            <div class="video-card glass-cloud">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/p_wptaqg8Cw" title="Salone dell'Auto di Ginevra 2024" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-badge">
+                                        <i class="fas fa-car"></i>
+                                        <span>Salone Auto</span>
+                                    </div>
+                                    <h4>Salone dell'Auto di Ginevra 2024</h4>
+                                    <p>Alla scoperta della Renault 5 e delle novità di BYD</p>
+                                    <div class="card-stats">
+                                        <div class="stat-item">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span>Ginevra</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <i class="fas fa-star"></i>
+                                            <span>Novità</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="video-card">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/TWc8Y-iyewQ" title="Hyundai Kona Full Hybrid" frameborder="0" allowfullscreen></iframe>
+                        <div class="carousel-slide">
+                            <div class="video-card glass-cloud">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/TWc8Y-iyewQ" title="Hyundai Kona Full Hybrid" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-badge">
+                                        <i class="fas fa-seedling"></i>
+                                        <span>Hybrid</span>
+                                    </div>
+                                    <h4>Hyundai Kona Full Hybrid - Primo contatto</h4>
+                                    <p>Test drive e recensione della Hyundai Kona ibrida</p>
+                                    <div class="card-stats">
+                                        <div class="stat-item">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <span>Test Drive</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <i class="fas fa-eco"></i>
+                                            <span>Eco-Friendly</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h4>Hyundai Kona Full Hybrid - Primo contatto</h4>
-                    <p>Test drive e recensione della Hyundai Kona ibrida</p>
+
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-nav prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                    </div>
                 </div>
             </div>
 
